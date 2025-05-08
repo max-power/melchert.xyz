@@ -49,8 +49,14 @@
         'wght' 300;   /* Weight: 100–900 */
 
     }
+    figure, img {
+      user-select: none;
+    }
     img {
       width: clamp(220px, 40vw, 360px);
+    }
+    ::selection {
+      background-color: var(--brand-yellow);
     }
   </style>
   
