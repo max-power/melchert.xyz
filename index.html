@@ -50,10 +50,12 @@
 
     }
     figure, img {
+      -webkit-user-select: none;
       user-select: none;
     }
     img {
       width: clamp(220px, 40vw, 360px);
+      aspect-ratio: 1;
     }
     ::selection {
       background-color: var(--brand-yellow);
@@ -65,7 +67,7 @@
   
   <div>
     <figure>
-      <img src="melchert-crest-old.png" width="300px">
+      <img src="melchert-crest-old.png" width="300">
     </figure>
     <h1>Melchert</h1>
   </div>
