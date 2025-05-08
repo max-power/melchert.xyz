@@ -22,7 +22,7 @@
     body {
       height: 100vh;
       background: var(--brand-white);
-      //background: linear-gradient(90deg, var(--brand-yellow) 26%, var(--brand-white) 26%);
+      background: linear-gradient(90deg, var(--brand-yellow) 3%, var(--brand-white) 3%);
       display: grid;
       align-items: center;
       justify-content: center;
@@ -33,15 +33,18 @@
       justify-items: center;
       gap: 2rem;
     }
-    h1 {
+    h1, figure,body {
       margin: 0;
+      padding: 0;
+    }
+    h1 {
       font-size: 7rem;
       font-family: 'FrauncesCustom', serif;
       font-weight: 400;
       font-variation-settings: 
         'SOFT' 20,   /* Example: range depends on font, 0–100 typical */
         'WONK' 1,     /* 0 (off) or 1 (on) if boolean */
-        'opsz' 36,    /* Optical size: often 9–144 */
+        'opsz' 72,    /* Optical size: often 9–144 */
         'wght' 300;   /* Weight: 100–900 */
 
     }
