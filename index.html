@@ -7,6 +7,14 @@
 
   <title>Melchert</title>
   <style>
+    @font-face {
+      font-family: 'FrauncesCustom';
+      src: url('Fraunces[SOFT,WONK,opsz,wght].woff2') format('woff2');
+      font-weight: 100 900; /* full weight range */
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
       --brand-yellow: hsl(48, 100%, 50%);
       --brand-white: hsl(0, 0%, 100%);
@@ -14,17 +22,28 @@
     body {
       height: 100vh;
       background: var(--brand-white);
-      background: linear-gradient(96deg, var(--brand-yellow) 26%, var(--brand-white) 26%);
+      //background: linear-gradient(90deg, var(--brand-yellow) 26%, var(--brand-white) 26%);
       display: grid;
       align-items: center;
       justify-content: center;
     }
     div {
-      display: flex;
+      display: grid;
       align-items: center;
+      justify-items: center;
+      gap: 2rem;
     }
     h1 {
-      font-size: 3rem;
+      margin: 0;
+      font-size: 7rem;
+      font-family: 'FrauncesCustom', serif;
+      font-weight: 400;
+      font-variation-settings: 
+        'SOFT' 20,   /* Example: range depends on font, 0–100 typical */
+        'WONK' 1,     /* 0 (off) or 1 (on) if boolean */
+        'opsz' 36,    /* Optical size: often 9–144 */
+        'wght' 300;   /* Weight: 100–900 */
+
     }
   </style>
   
@@ -33,7 +52,7 @@
   
   <div>
     <figure>
-      <img src="melchert-crest.png">
+      <img src="melchert-crest2.png" width="180px">
     </figure>
     <h1>Melchert</h1>
   </div>
